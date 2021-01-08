@@ -79,7 +79,6 @@ namespace ChainOfResponsability
             rule
                 .SetNext(new ActiveDirectory())
                 .SetNext(new CredentialsCheck())
-                .Run(request);
             return rule.Run(request);
         }
     }
